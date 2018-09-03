@@ -8,10 +8,10 @@ namespace IDomain.Abstract.Entitys
 		SalesState State { get; }
 		string ClientUUID { get; }
 		IEnumerable<IItemsSales> Items { get; }
-		string UUID { get; set; }
+		string UUID { get; }
 
 		double Total();
 		double Quantity();
-		void SetUUID(string v);
+		void SetUUID(string uuid);
 	}
 }
